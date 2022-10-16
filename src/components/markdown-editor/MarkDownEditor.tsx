@@ -50,7 +50,7 @@ export const MarkDownEditor = (props: MarkDownEditorProps) => {
                 throwOnError: false
               }
             );
-            return <code dangerouslySetInnerHTML={{ __html: html }} />;
+            return <code className="custom-math-formula" dangerouslySetInnerHTML={{ __html: html }} />;
           }
           return <code>{txt}</code>;
         }
